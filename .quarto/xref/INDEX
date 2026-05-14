@@ -1,0 +1,35 @@
+{
+  "02-estructuras-dinamicas.qmd": {
+    "02-estructuras-dinamicas.html": "5d678bc8"
+  },
+  "index.qmd": {
+    "index.html": "0d8f8c8e"
+  },
+  "summary.qmd": {
+    "summary.html": "59defd0c"
+  },
+  "intro.qmd": {
+    "intro.html": "2061fd02"
+  },
+  "01-estructuras-estaticas.qmd": {
+    "01-estructuras-estaticas.html": "7a5d6caf"
+  },
+  "03-algoritmos-ordenacion.qmd": {
+    "03-algoritmos-ordenacion.html": "ef7c33d7"
+  },
+  "04-algoritmos-busqueda.qmd": {
+    "04-algoritmos-busqueda.html": "1a027d51"
+  },
+  "05-grafos-arboles.qmd": {
+    "05-grafos-arboles.html": "e122388d"
+  },
+  "06-estructuras-avanzadas.qmd": {
+    "06-estructuras-avanzadas.html": "ecc43b4a"
+  },
+  "references.qmd": {
+    "references.html": "767b275a"
+  },
+  "07-ArbolesBinarios.qmd": {
+    "07-ArbolesBinarios.html": "29d7392f"
+  }
+}
