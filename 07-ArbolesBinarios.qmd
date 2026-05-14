@@ -12,6 +12,15 @@ El **árbol binario** por otro lado Se lo define como un conjunto finito cero o 
 
 Este tipo de arboles son sorprendentemente potentes y eficientes. Con Implementaciones equilibradas, la mayoría de las operaciones son tiempo logarítmico La complejidad, lo que significa que las operaciones en árboles binarios son rápidas incluso cuando el número de nodos es grande.[@unemi2020]
 
+## Definicion
+
+Un árbol es definido como una serie de nodos donde se guardará información y también almacena la ubicación de los elementos sucesores. Lo que brinda homogeneidad en los datos que se almacenan en ellos, pudiendo tener más de un elemento posterior, pero solo tendrán un elemento que le anteceda.
+Estas estructuras se usan para representar datos que tengan una relación de jerarquía entre sus elementos implicando recursividad, como si fuera un árbol genealógico de una persona. Pero si este carece de nodos se lo define como un árbol nulo que no posee raíz [@unemi2020].
+
+El **árbol binario** por otro lado Se lo define como un conjunto finito cero o más nodos, y puede ser implementado con facilidad en cualquier computadora. Considerando que cada nodo podrá tener de 0, 1 o 2 subárboles a la izquierda o a la derecha [@interviewcake].
+
+Este tipo de arboles son sorprendentemente potentes y eficientes. Con Implementaciones equilibradas, la mayoría de las operaciones son tiempo logarítmico La complejidad, lo que significa que las operaciones en árboles binarios son rápidas incluso cuando el número de nodos es grande [@unemi2020].
+
 ```Java
 public class BinaryTreeNode {
 
@@ -60,3 +69,50 @@ A diferencia de los grafos, donde `igraph` es el estándar consolidado, R carece
 
 Aquí construiremos una representación sencilla de un nodo de árbol binario utilizando una clase S3, y mostraremos cómo se conectarían instancias de ese nodo para formar un árbol completo, con sus relaciones padre-hijo codificadas a través de referencias a otros nodos almacenados en los campos `left` y `right`. Cuando un campo apunta a `NULL`, indica la ausencia de ese hijo, marcando así un nodo hoja o un extremo del árbol:
 
+A diferencia de los grafos, donde `igraph` es el estándar consolidado, R carece de un paquete único y universalmente adoptado para la creación de árboles binarios genéricos como tipos de datos abstractos. Aun asi, en cuanto al sistema de objetos, R ofrece varias alternativas para modelar nuestro propio nodo: S3 es el sistema orientado a objetos más antiguo y simple de R, el único usado en los paquetes base y `stats`, y el más común en los paquetes de CRAN. Es informal y flexible otorgando a los programadores una gran libertad, a costa de imponer pocas restricciones automáticas. Por contraste, S4 es más formal y tiende a requerir más planificación previa; su formalidad y estructura lo hacen más adecuado para equipos grandes, donde la mayor disciplina del sistema reduce la necesidad de convenciones informales [@adv-r].
+
+Aquí construiremos una representación sencilla de un nodo de árbol binario utilizando una clase S3, y mostraremos cómo se conectarían instancias de ese nodo para formar un árbol completo, con sus relaciones padre-hijo codificadas a través de referencias a otros nodos almacenados en los campos `left` y `right`. Cuando un campo apunta a `NULL`, indica la ausencia de ese hijo, marcando así un nodo hoja o un extremo del árbol:
+
+```r
+# Constructor de nodos para el árbol binario
+# Un nodo contiene su valor y los enlaces a sus hijos
+create_node <- function(value, left = NULL, right = NULL) {
+node <- list(
+value = value, # dato del nodo
+left = left, # hijo izquierdo
+right = right # hijo derecho
+)
+
+class(node) <- "tree_node" # asignamos una clase al nodo
+return(node)
+}
+
+
+# Método print para nodos de la clase "tree_node"
+# Muestra el valor del nodo y el de sus hijos
+print.tree_node <- function(x, ...) {
+cat("⮞ Nodo:", x$value, "\n")
+cat(" ↳ Izquierdo:", if (!is.null(x$left)) x$left$value else "NULL", "\n")
+cat(" ↳ Derecho: ", if (!is.null(x$right)) x$right$value else "NULL", "\n")
+}
+
+
+# Nivel 3 (hojas)
+n4 <- create_node(4)
+n6 <- create_node(6)
+n9 <- create_node(9)
+n12 <- create_node(12)
+
+# Nivel 2
+n5 <- create_node(5, left = n4, right = n6)
+n10 <- create_node(10, left = n9, right = n12)
+
+# Nivel 1 (raíz)
+root <- create_node(8, left = n5, right = n10)
+
+# Impresiones
+print(root) # imprime el nodo raíz
+print(root$left) # imprime el nodo hijo izquierdo (5)
+print(root$right) # imprime el nodo hijo derecho (10)
+print(root$left$right) # imprime el hijo derecho de 5 (6)
+```
