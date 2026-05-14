@@ -275,6 +275,9 @@ public class TreeVisualizer extends JPanel {
 ```
 **Ejecución en la terminal del ejemplo en java**
 ![Demostracion Grafica](images/compilacion.png){fig-align="center" width=70%}
+**Representación del árbol binario**
+![Demostracion Grafica](images/arbol binario .png){fig-align="center" width=70%}
+
 ### Implementación de árboles binarios en JavaScript.
 A diferencia de otros lenguajes fuertemente tipados donde las estructuras de datos deben declararse mediante tipos rígidos, JavaScript ofrece un sistema de objetos dinámico que permite modelar árboles binarios de forma flexible. En particular, las clases introducidas en ES6 proveen una sintaxis más familiar para quienes provienen de lenguajes orientados a objetos tradicionales, aun cuando internamente siguen basándose en el sistema de prototipos propio del lenguaje. Esta flexibilidad facilita la construcción de estructuras como árboles binarios sin necesidad de definir jerarquías complejas o tipos estáticos.
 
