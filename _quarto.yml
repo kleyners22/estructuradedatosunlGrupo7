@@ -32,6 +32,12 @@ format:
   html:
     theme:
       - cosmo
+    css:
+      - styles.css  
 
   pdf:
     documentclass: scrreprt
+    include-in-header:
+      text: |
+        \usepackage{ragged2e}
+        \justifying
