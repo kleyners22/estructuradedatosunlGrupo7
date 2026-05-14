@@ -301,3 +301,4 @@ function inorderSimple(node, result = []) {
 ```
 
 **Enlace del repositorio**: https://github.com/kleyners22/estructuradedatosunlGrupo7
+**Enlace del video**: https://drive.google.com/drive/folders/1n4_AucsRG3DHZbrP2y9KgEKUytJfz9WK?usp=sharing
