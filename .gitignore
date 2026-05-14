@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 */.quarto_ipynb
 .quarto/
 _book/
 /.quarto/
 **/*.quarto_ipynb
+=======
+*/.quarto_ipynb
+.quarto/
+_book/
+>>>>>>> 82c72d9472a23418d20607eb4dde07bc43d1ec7b
