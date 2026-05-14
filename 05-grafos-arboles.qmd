@@ -2,34 +2,9 @@
 title: "Estructuras No Lineales"
 ---
 
-Las estructuras de datos no lineales son aquellas que no se organizan en una línea o en orden secuencial. Sino que se estructuran en un formato basado en redes que son más complejos de configurar que las estructuras de datos lineales, ofreciendo una mejor eficiencia para tareas específicas, como la búsqueda y la ordenación. Son estructuras de tipo no primitivo que también son llamados como estructuras de datos estructuras de datos multienlazadas ya que cada elemento puede estar enlazado a cualquier otro componente.
-En estas estructuras se clasifican como árboles y grafos donde cada elemento puede tener varios sucesores y/o varios predecesores.
+¡Hola a todos y bienvenidos a este capítulo sobre Estructuras No Lineales en R! En el mundo de la programación y el análisis de datos, no todo es una tabla bonita o un vector secuencial. A menudo, la información que manejamos tiene relaciones complejas, jerarquías o interconexiones que las estructuras de datos lineales simplemente no pueden representar de manera eficiente o intuitiva. Aquí es donde entran en juego los grafos y los árboles binarios.
 
-## Arboles.
-
-Un **árbol** es definido como una serie de serie de nodos donde se guardará información y también almacena la ubicación de los elementos sucesores. Lo que brinda homogeneidad en los datos que se almacenan en ellos, pudiendo tener más de un elemento posterior, pero solo tendrán un elemento que le anteceda.
-Estas estructuras se usan para representar datos que tengan una relación de jerarquía entre sus elementos implicando recursividad, como si fuera un árbol genealógico de una persona. Pero si este carece de nodos se lo define como un árbol nulo que no posee raíz.
-
-Las partes que conforman un árbol son:
-
-*   **Nodo hijo**: Este siempre tendrá un nodo antecesor o superior del cual tomará su nombre.
-*   **Nodo padre**: Es el nodo del cual se desprenden varios nodos hijos y se lo debe considerar como antecesor.
-*   **Nodo hermano**: Son los que toman el nombre del nodo hermano si se desprenden del mismo nodo padre.
-*   **Raíz**: El nodo superior del árbol, que no tiene nodo padre.
-*   **Hoja o terminal**: Un nodo sin hijos; estos aparecen en la parte inferior del árbol.
-*   **Interior**: Toman este nombre aquellos nodos que no son raíz ni hoja.
-*   **Arista**: La conexión entre dos nodos.
-
-**Representación de árbol general.**
-
-![Ejemplo de arbol](images/arbol.png){fig-align="center" width=70%}
-
-### Tipos de árboles binarios.
-
-*   **Árbol Binario**: Se lo define como un conjunto finito cero o más nodos, y puede ser implementado con facilidad en cualquier computadora. Considerando que cada nodo podrá tener de 0, 1 o 2 subárboles a la izquierda o a la derecha.
-*   **Árbol binario completo**: Este tipo de árboles se les dice completos si los nodos tienen exactamente dos subárboles, sin considerar los nodos que se encuentren en los niveles inferiores o más bajos. Si está lleno por completo, este árbol toma ese nombre “árbol lleno”. Mientras que aquel árbol que solo tenga un subárbol tomará el nombre de árbol “degenerado”.
-*   **Árbol binario perfecto**: En este tipo de árbol binario no se pueden añadir más nodos sin crear un nuevo nivel. Los árboles binarios perfectos de altura h tienen $2^{h+1}-1$ nodos. Por su forma a menudo se parecen a los cuadros de torneos.
-*   **Árbol binario equilibrado**: En estos, los subárboles de cada nodo tienen alturas similares, que normalmente difieren como máximo en uno. Garantiza que operaciones como la inserción, la eliminación y la búsqueda sean.
+En este capítulo, exploraremos cómo R nos permite trabajar con estas estructuras fundamentales, dotándonos de las herramientas para modelar y analizar datos con relaciones más intrincadas. Prepárense para ver cómo R, con la ayuda de paquetes poderosos, transforma estos conceptos abstractos en herramientas prácticas para la ciencia de datos.
 
 ## Grafos: Tejiendo Redes de Relaciones
 
