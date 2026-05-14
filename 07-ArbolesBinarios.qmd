@@ -2,4 +2,14 @@
 title: "07-ArbolesBinarios"
 format: html
 ---
+### Implementando Árboles Binarios en Pyton
+Hemos recorrido un camino fascinante por el mundo de las estructuras no lineales en R. Los **grafos**, con el soporte excepcional del paquete `igraph`, nos permiten modelar y analizar sistemas complejos donde las relaciones son primordiales, desde redes sociales hasta interacciones biológicas. Los **árboles binarios**, aunque su implementación en R a nivel de estructura de datos pura puede requerir un enfoque más "manual" o específico, son fundamentales para entender cómo se organizan y procesan los datos de forma jerárquica, subyaciendo a muchos algoritmos de búsqueda y toma de decisiones.
 
+#### Evidencia de la Implementación (Código y Salida)
+![Código de la estructura y lógica en Python](C:/Users/jhosu/Documents/estructuradedatosunlGrupo7/images/imagen de codigo1)
+![Código de la estructura y lógica en Python](C:/Users/jhosu/Documents/estructuradedatosunlGrupo7/images/imagen de codigo 2)
+![Simulacion del codigo](C:/Users/jhosu/Documents/estructuradedatosunlGrupo7/images/simulacion del codgio)
+
+## Conclusión
+Este ejercicio integra la arquitectura lógica de Python con la potencia analítica de R para dominar 
+estructuras no lineales, construyendo primero un árbol binario jerárquico mediante clases y recursividad.Posteriormente, se utiliza R y el paquete igraph para visualizar y analizar redes complejas, transformando nodos abstractos en grafos relacionales de alta interpretabilidad. Esta sinergia demuestra que mientras Python es ideal para el diseño estructural, R es la herramienta definitiva para el análisis de conexiones.
