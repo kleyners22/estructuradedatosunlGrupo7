@@ -303,10 +303,13 @@ public class TreeVisualizer extends JPanel {
 ```
 
 **Resultado**
+
 **Ejecución en la terminal del ejemplo en java**
+
 ![Demostracion Grafica](images/compilacion.png){fig-align="center" width=70%}
 
 **Representación del árbol binario**
+
 ![Demostracion Grafica](images/arbol binario .png){fig-align="center" width=70%}
 
 ### Implementación en JavaScript.
@@ -384,8 +387,13 @@ function inorderSimple(node, result = []) {
     return result;
 }
 ```
+## Conclusiones.
 
-**Resultado**
+Los árboles binarios representan una de las estructuras de datos más importantes dentro de la informática, ya que permiten organizar información de manera jerárquica y eficiente. Gracias a su estructura basada en nodos enlazados, facilitan el almacenamiento y acceso ordenado de los datos.
+
+La relación entre nodos padre, hijos y hermanos permite modelar problemas reales donde existe jerarquía, como árboles genealógicos, sistemas de archivos, bases de datos, compiladores y motores de búsqueda.
+
+Los árboles binarios destacan por su eficiencia computacional. En estructuras equilibradas, operaciones como búsqueda, inserción y eliminación poseen complejidad logarítmica, lo que mejora significativamente el rendimiento incluso con grandes volúmenes de datos.
 
 ## Enlaces.
 
